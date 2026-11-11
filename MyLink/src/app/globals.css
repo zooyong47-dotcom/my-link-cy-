@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  /* NOL Design System Semantic Mapping */
+  --background: #ffffff;
+  --foreground: #1B1C1F;
+  --card: #ffffff;
+  --card-foreground: #1B1C1F;
+  --popover: #ffffff;
+  --popover-foreground: #1B1C1F;
+  --primary: #4154FF;
+  --primary-foreground: #ffffff;
+  --secondary: #F5F6FF;
+  --secondary-foreground: #4154FF;
+  --muted: #F7F8FB;
+  --muted-foreground: #6E6F73;
+  --accent: #FEF5F5;
+  --accent-foreground: #E5000F;
+  --destructive: #E5000F;
+  --destructive-foreground: #ffffff;
+  --border: #E9EAEF;
+  --input: #DADBDF;
+  --ring: #4154FF;
+  --radius: 16px;
+
+  /* NOL Colors */
+  --nol-blue: #3549FF;
+  --primary-main: #4154FF;
+  --primary-presshover: #2432AD;
+  --primary-weak: #F5F6FF;
+  --primary-weak1: #DFE2FF;
+  --primary-weak2: #B2BAFF;
+
+  --accent-main: #E5000F;
+  --accent-weak: #FEF5F5;
+
+  --neutral-main: #1B1C1F;
+  --neutral-strong1: #6E6F73;
+  --neutral-medium: #8B8D92;
+  --neutral-weak4: #B6B7BB;
+  --neutral-weak3: #DADBDF;
+  --neutral-weak2: #E9EAEF;
+  --neutral-weak1: #F2F3F7;
+  --neutral-weak: #F7F8FB;
+  --neutral-veryweak: #FAFBFD;
+  --static-white: #ffffff;
+  --static-black: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* NOL specific color utilities */
+  --color-nol-blue: var(--nol-blue);
+  --color-primary-main: var(--primary-main);
+  --color-primary-presshover: var(--primary-presshover);
+  --color-primary-weak: var(--primary-weak);
+  --color-primary-weak1: var(--primary-weak1);
+  --color-primary-weak2: var(--primary-weak2);
+
+  --color-accent-main: var(--accent-main);
+  --color-accent-weak: var(--accent-weak);
+
+  --color-neutral-main: var(--neutral-main);
+  --color-neutral-strong1: var(--neutral-strong1);
+  --color-neutral-medium: var(--neutral-medium);
+  --color-neutral-weak4: var(--neutral-weak4);
+  --color-neutral-weak3: var(--neutral-weak3);
+  --color-neutral-weak2: var(--neutral-weak2);
+  --color-neutral-weak1: var(--neutral-weak1);
+  --color-neutral-weak: var(--neutral-weak);
+  --color-neutral-veryweak: var(--neutral-veryweak);
+  --color-static-white: var(--static-white);
+  --color-static-black: var(--static-black);
+
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-28: 28px;
+  --radius-capsule: 9999px;
+}
+
+body {
+  background-color: #ffffff !important;
+  color: var(--neutral-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NOL Elevation */
+.shadow-nol-1 {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-nol-2 {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-nol-3 {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}

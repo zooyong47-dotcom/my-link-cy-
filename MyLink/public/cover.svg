@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- NOL Signature Brand Gradient (oklch palette: 하늘색 -> 파랑 -> 보라) -->
+    <linearGradient id="nolBrandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3549FF"/>
+      <stop offset="35%" stop-color="#4154FF"/>
+      <stop offset="70%" stop-color="#5B72FF"/>
+      <stop offset="100%" stop-color="#7B52F3"/>
+    </linearGradient>
+
+    <!-- Ambient Mesh Glows -->
+    <radialGradient id="glowTopRight" cx="85%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#8249D8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3549FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowBottomLeft" cx="15%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#4AB0F9" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#3549FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle Modern Wave Lines -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Gradient Fill -->
+  <rect width="1200" height="400" fill="url(#nolBrandGrad)"/>
+  
+  <!-- Ambient Highlights -->
+  <rect width="1200" height="400" fill="url(#glowTopRight)"/>
+  <rect width="1200" height="400" fill="url(#glowBottomLeft)"/>
+
+  <!-- Elegant Curvature Lines (NOL CI 모티프: 하늘과 곡선의 확장) -->
+  <path d="M-100 320 C300 200 700 420 1300 180" fill="none" stroke="url(#lineGrad)" stroke-width="2"/>
+  <path d="M-100 260 C350 140 750 360 1300 120" fill="none" stroke="url(#lineGrad)" stroke-width="1.5"/>
+  <path d="M-100 380 C400 260 800 460 1300 240" fill="none" stroke="url(#lineGrad)" stroke-width="1"/>
+
+  <!-- Soft Geometric Float Capsule Shapes -->
+  <g opacity="0.12">
+    <rect x="860" y="60" width="220" height="64" rx="32" fill="#FFFFFF" transform="rotate(-12 970 92)"/>
+    <rect x="140" y="240" width="180" height="52" rx="26" fill="#FFFFFF" transform="rotate(8 230 266)"/>
+    <circle cx="1060" cy="280" r="48" fill="#FFFFFF"/>
+    <circle cx="220" cy="80" r="32" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Subtle Sparkles -->
+  <g fill="#FFFFFF" opacity="0.3">
+    <path d="M 600 90 L 603 98 L 611 101 L 603 104 L 600 112 L 597 104 L 589 101 L 597 98 Z"/>
+    <path d="M 980 220 L 982 226 L 988 228 L 982 230 L 980 236 L 978 230 L 972 228 L 978 226 Z"/>
+    <path d="M 280 180 L 282 186 L 288 188 L 282 190 L 280 196 L 278 190 L 272 188 L 278 186 Z"/>
+  </g>
+</svg>
